@@ -38,8 +38,9 @@ body {
 }
 
 .content {
-    text-align: center;
+    text-align: left;
     max-width: 900px;
+    width: min(900px, 90%);
     animation: fadeIn 1.5s ease-in;
 }
 
@@ -53,6 +54,7 @@ body {
     padding: 3rem 2.5rem;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     animation: scaleIn 0.8s ease-out;
+    text-align: left;
 }
 
 .event-title {
@@ -69,7 +71,7 @@ body {
     width: 100px;
     height: 2px;
     background: white;
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem 0;
     animation: expandWidth 1s ease-out 0.5s both;
 }
 
@@ -161,4 +163,46 @@ body {
     .back-link {
         margin-top: 2rem;
     }
+}
+
+/* Additional content styles for event detail page */
+.glass-card p {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.glass-card .lead {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.section-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.offers,
+.costs {
+    list-style: disc;
+    margin: 0.5rem 0 1rem;
+    padding-right: 1.2rem;
+    max-width: 720px;
+    text-align: right;
+}
+
+.offers li,
+.costs li {
+    color: white;
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+
+.closing {
+    margin-top: 1rem;
+    color: white;
+    font-weight: 300;
 }
